@@ -18,4 +18,14 @@ public class LoginGeneratorTest {
     public void testJRAL2() {
         assertEquals("Le login créé ne correspond pas.", "JRAL2", loginGenerator.generateLoginForNomAndPrenom("RALLING","JOHN"));
     }
+
+    @Test
+    public void testJROL1() {
+        assertEquals("Le login créé ne correspond pas.", "JROL1", loginGenerator.generateLoginForNomAndPrenom("ROLLING","JEAN"));
+    }
+
+    @Test
+    public void testPaulDùrand() {
+        assertEquals("Le login créé ne correspond pas.", "PDUR", loginGenerator.generateLoginForNomAndPrenom("Dùrand","Paul"));
+    }
 }
